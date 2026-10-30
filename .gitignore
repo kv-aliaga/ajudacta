@@ -1,1 +1,7 @@
 *.env
+__pycache__/
+*.py[cod]
+integrations/token-id/.env
+integrations/token-id/firebase-service-account.json
+integrations/token-id/firebaseuid_validos.csv
+integrations/token-id/firebase-id-token.csv

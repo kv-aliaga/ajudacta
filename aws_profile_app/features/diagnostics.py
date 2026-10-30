@@ -20,7 +20,7 @@ from urllib.request import Request, urlopen
 import boto3
 from botocore.config import Config
 
-from ..constants import KUBECONFIG_PATH, PALETTE, PLATFORM_REPO
+from ..constants import APP_ROOT, KUBECONFIG_PATH, PALETTE, PLATFORM_REPO
 from ..ui.markdown_terminal import MarkdownTerminal
 
 
@@ -437,7 +437,7 @@ class DiagnosticsMixin:
 - Namespace das APIs: acta-prod; namespace do Argo CD: argocd.
 - O app consulta o perfil AWS default, o Elastic IP marcado acta-prod-k3s, as réplicas Kubernetes, os recursos InfisicalSecret, o Secret infisical-universal-auth sem ler seus valores, a aplicação Argo CD acta-prod, os certificados e URLs públicas /health (ou /docs para Import API).
 - As URLs são verificações HTTP externas. Estado HTTP e estado de readiness dos pods são evidências diferentes.
-- O fluxo de reimplantação documentado está em {Path(r'C:\Users\daviramOS-ieg\Desktop\ultima-dancacta\agents\Handshake.md')}; consulte o documento apenas como contexto operacional e não execute seus passos.
+- O procedimento operacional de rollout deste aplicativo está em {APP_ROOT / 'ROLLOUT_SESSION.md'}; consulte o documento apenas como contexto e não execute seus passos.
 ## TABELA COMPLETA DO DIAGNÓSTICO
 {chr(10).join(table)}
 ## LIMITES DE SEGURANÇA

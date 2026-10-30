@@ -187,7 +187,7 @@ class TokenMixin:
         else:
             user = {"firebase_uid": uid, "nome": "UID não mapeado no CSV"}
         if not TOKEN_GENERATOR_SCRIPT.is_file() or not TOKEN_ID_DIR.is_dir():
-            self._set_token_result("O script local de emissão não foi encontrado em Desktop\\token-id.", "error")
+            self._set_token_result(f"O script local de emissão não foi encontrado em {TOKEN_ID_DIR}.", "error")
             return
         self.token_generation_busy = True
         self.active_firebase_token = ""

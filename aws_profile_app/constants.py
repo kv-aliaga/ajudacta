@@ -51,7 +51,7 @@ LOG_DEPLOYMENTS = {
 
 KUBECONFIG_PATH = Path.home() / ".kube" / "acta-aws.yaml"
 
-TOKEN_ID_DIR = Path.home() / "Desktop" / "token-id"
+TOKEN_ID_DIR = APP_ROOT / "integrations" / "token-id"
 
 TOKEN_USERS_CSV = TOKEN_ID_DIR / "firebaseuid_validos.csv"
 
@@ -61,7 +61,7 @@ TOKEN_GENERATOR_SCRIPT = TOKEN_ID_DIR / "fb.py"
 
 INFISICAL_ENV_PATH = APP_ROOT / ".env"
 
-PLATFORM_REPO = Path(r"C:\Users\daviramOS-ieg\Desktop\2º ano\Inter\Github\acta-platform")
+PLATFORM_REPO = APP_ROOT / "integrations" / "acta-platform"
 
 PLATFORM_TERRAFORM_DIR = PLATFORM_REPO / "infra" / "aws"
 

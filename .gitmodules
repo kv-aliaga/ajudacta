@@ -1,0 +1,4 @@
+[submodule "integrations/acta-platform"]
+	path = integrations/acta-platform
+	url = https://github.com/AppActa/acta-platform.git
+	branch = feat/auth

@@ -1,5 +1,8 @@
 boto3==1.43.111
 customtkinter==6.0.0
+firebase-admin==7.7.0
 markdown-it-py==4.2.0
+python-dotenv==1.2.2
+requests==2.34.2
 tkinterweb==4.25.5
 winotify==1.1.0
